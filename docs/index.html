@@ -2,11 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Towards Better Cephalometric Landmark Detection with Diffusion Data Generation.">
-  <meta name="keywords" content="Landmark Detection, Cephalometric X-ray, Diffusion, Anatomy-Informed Topology, Data Generation">
+  <meta name="description" content="Reducing CT Metal Artifacts by Learning Latent Space Alignment with Gemstone Spectral Imaging Data">
+  <!-- <meta name="keywords" content="Landmark Detection, Cephalometric X-ray, Diffusion, Anatomy-Informed Topology, Data Generation"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Towards Better Cephalometric Landmark Detection with Diffusion Data Generation</title>
+  <title>Reducing CT Metal Artifacts by Learning Latent Space Alignment with Gemstone Spectral Imaging Data</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -88,17 +87,22 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Towards Better Cephalometric Landmark Detection with Diffusion Data Generation</h1>
+          <h1 class="title is-1 publication-title">Reducing CT Metal Artifacts by Learning Latent Space Alignment with Gemstone Spectral Imaging Data</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=fC226aMAAAAJ">Dongqian Guo</a><sup>*1</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=hGZueIUAAAAJ">Wencheng Han</a><sup>*1</sup>,</span>
-            <span class="author-block">
-              Pang Lyu<sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=hGZueIUAAAAJ">Wencheng Han</a><sup>*1</sup>,
             </span>
             <span class="author-block">
-              Yuxi Zhou<sup>3</sup>,
+              <a href="https://scholar.google.com/citations?user=fC226aMAAAAJ">Dongqian Guo</a><sup>*1</sup>,
+            </span>
+            <span class="author-block">
+              Xiao Chen<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Pang Lyu<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Yi Jin<sup>2</sup>,
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=_Q3NTToAAAAJ">Jianbing Shen</a><sup>†1</sup>,
@@ -107,8 +111,8 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Macau, Macau,</span>
-            <span class="author-block"><sup>2</sup>Zhongshan Hospital, Fudan University, Shanghai, China,</span>
-            <span class="author-block"><sup>3</sup>Stomatology Hospital of Guangzhou Medical University, China</span>
+            <span class="author-block"><sup>2</sup>Department of Orthopedics, People's Hospital of Zhengzhou University, Henan Provincial People's Hospital,</span>
+            <span class="author-block"><sup>3</sup>Zhongshan Hospital, Fudan University, Shanghai, China</span>
           </div>
 
         <div class="is-size-8 publication-authors">
@@ -133,15 +137,15 @@
                   <span>Paper</span>
                 </a>
               </span> -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+              <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Video Link. -->
               <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
@@ -154,7 +158,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/MIKE-GUO233/anatomy-informed-cepha-generation"
+                <a href="https://github.com/um-lab/GSI-MAR"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -163,7 +167,7 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://drive.google.com/drive/folders/1Gbx67u38YzBF6ZrhxdMAYSXqk2V0pZld?usp=sharing"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -171,6 +175,7 @@
                   </span>
                   <span>Data</span>
                   </a>
+              </span> -->
             </div>
 
           </div>
@@ -262,11 +267,8 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          Cephalometric landmark detection is essential for orthodontic diagnostics and treatment planning. Nevertheless, the scarcity of samples in data collection and the extensive effort required for manual annotation have significantly impeded the availability of diverse datasets. This limitation has restricted the effectiveness of deep learning-based detection methods, particularly those based on large-scale vision models.
-          To address these challenges, we have developed an innovative data generation method capable of producing diverse cephalometric X-ray images along with corresponding annotations without human intervention. To achieve this, our approach initiates by constructing new cephalometric landmark annotations using anatomical priors. Then, we employ a diffusion-based generator to create realistic X-ray images that correspond closely with these annotations.
-          To achieve precise control in producing samples with different attributes, we introduce a novel prompt cephalometric X-ray image dataset. This dataset includes real cephalometric X-ray images and detailed medical text prompts describing the images. By leveraging these detailed prompts, our method improves the generation process to control different styles and attributes. 
-          Facilitated by the large, diverse generated data, we introduce large-scale vision detection models into the cephalometric landmark detection task to improve accuracy.  Experimental results demonstrate that training with the generated data substantially enhances the performance. 
-          Compared to methods without using the generated data, our approach improves the Success Detection Rate (SDR) by 6.5%, attaining a notable 82.2%.
+          Metal artifacts in CT slices have long posed challenges in medical diagnostics. These artifacts degrade image quality, resulting in suboptimal visualization and complicating the accurate interpretation of tissues adjacent to metal implants. To address these issues, we introduce the Latent Gemstone Spectral Imaging (GSI) Alignment Framework, which effectively reduces metal artifacts while avoiding the introduction of noise information. Our work is based on a key finding that even artifact-affected ordinary CT sequences contain sufficient information to discern detailed structures. The challenge lies in the inability to clearly represent this information.
+          To address this issue, we developed an Alignment Framework that adjusts the representation of ordinary CT images to match GSI CT sequences. GSI is an advanced imaging technique using multiple energy levels to mitigate artifacts caused by metal implants. By aligning the representation to GSI data, we can effectively suppress metal artifacts while clearly revealing detailed structure, without introducing extraneous information into CT sequences. To facilitate the application, we propose a new dataset, Artifacts-GSI, captured from real patients with metal implants, and establish a new benchmark based on this dataset. Experimental results show that our method significantly reduces metal artifacts and greatly enhances the readability of CT slices.
         </div>
       </div>
     </div>
@@ -444,7 +446,7 @@
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/MIKE-GUO233/" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/um-lab" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>

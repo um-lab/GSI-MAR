@@ -1,7 +1,7 @@
-# Anatomy-Informed Cephalometric X-ray Generation(AICG)
+# Reducing CT Metal Artifacts by Learning Latent Space Alignment with Gemstone Spectral Imaging Data
 
-This is the official repository of our paper ***Towards Better Cephalometric Landmark Detection with DiffusionData Generation***.
+This is the official repository of our paper ***Reducing CT Metal Artifacts by Learning Latent Space Alignment with Gemstone Spectral Imaging Data***.
 
 Our code and dataset will be released soon.
 
-More details are available in [Project website](https://mike-guo233.github.io/anatomy-informed-cepha-generation/)
+More details are available in [Project website](https://um-lab.github.io/GSI-MAR/)
