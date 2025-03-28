@@ -138,7 +138,7 @@
                 </a>
               </span> -->
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/abs/2503.21259"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -275,16 +275,57 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Method</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <img src="/Users/mike/project_website/GSI-MAR/docs/static/CT_denoising_motivtaion.jpg" alt="CT Denoising Method" style="max-width: 100%; height: auto;">
+          <!-- <img src="./static/CT_denoising_motivation.jpg" alt="CT Denoising Method" style="max-width: 100%; height: auto;"> -->
+
+          <div class="content has-text-justified">
+            <strong>Figure.1</strong> Comparison of Artifacts Reduction Pipelines. (a) Most previous methods rely on synthetic artifact data derived from clean CT
+            sequences of patients without implants. Additionally, many methods use image generation algorithms, which may introduce extraneous
+            information, potentially compromising the reliability of the resulting CT sequences. (b) In contrast, our method utilizes real artifact
+            CT pairs for training, effectively bridging the domain gap. Our approach employs a representation alignment algorithm, maintaining
+            information consistency. (c) We provide a comparison of inference results between our method and previous methods to illustrate the
+            effectiveness of our approach.
+          </div>
+          
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Paper video. -->
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-video">
+          <img src="/Users/mike/project_website/GSI-MAR/docs/static/CT_Denoising_Networkv2.jpg" alt="CT Denoising Method" style="max-width: 100%; height: auto;">
+          <!-- <img src="./static/CT_denoising_motivation.jpg" alt="CT Denoising Method" style="max-width: 100%; height: auto;"> -->
+          <div class="content has-text-justified">
+            <strong>Figure.2</strong> Illustration of the Proposed Latent Space Alignment Framework. The pipeline consists of four stages: Data Processing,
+            VAE encoding, Latent Space Alignment, and VAE decoding.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualization</h2>
+        <div class="publication-video">
+          <img src="/Users/mike/project_website/GSI-MAR/docs/static/CT_vis.jpg" alt="CT Denoising Method" style="max-width: 100%; height: auto;">
+
+          <div class="content has-text-justified">
+            <strong>Figure.3</strong> Qualitative Comparisons. (a) Comparison on the Test Set: Images of patients with hip prostheses used in total hip arthroplasty,
+            fracture internal fixation, and spinal internal fixation. (b) Comparison on the Generalization Set: Evaluation on data from unseen CT
+            machines (SpineWeb dataset, Siemens, Philips, and UIH CT machines) to demonstrate generalization.
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </section>
 
@@ -443,7 +484,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="https://arxiv.org/pdf/2503.21259">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/um-lab" class="external-link" disabled>
